@@ -5,6 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/Charts-Plotly-3F4F75.svg)](https://plotly.com/)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/devashmitha1308/memory-mirrorAI)
 [![Project](https://img.shields.io/badge/Innovation_Challenge-SparkX_3.0-purple.svg)]()
 
 MemoryMirror AI is an intelligent continual learning and memory retention monitoring system designed to detect, measure, and prevent **catastrophic forgetting** in sequential neural network learning.
