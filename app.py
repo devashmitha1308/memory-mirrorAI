@@ -607,6 +607,33 @@ with tabs[4]:
     )
 
     st.markdown("---")
+    st.markdown("#### 📚 Download Team Study & Presentation Guides (PDF)")
+    col_pdf1, col_pdf2 = st.columns(2)
+    with col_pdf1:
+        import os
+        gauri_pdf_path = "MemoryMirror_AI_Gauri_Dwivedi_Leader_Guide.pdf"
+        if os.path.exists(gauri_pdf_path):
+            with open(gauri_pdf_path, "rb") as f:
+                st.download_button(
+                    label="👑 Download Gauri's Guide (PDF)",
+                    data=f.read(),
+                    file_name="MemoryMirror_AI_Gauri_Dwivedi_Leader_Guide.pdf",
+                    mime="application/pdf",
+                    use_container_width=True,
+                )
+    with col_pdf2:
+        deva_pdf_path = "MemoryMirror_AI_Devashmitha_Reddy_Member_Guide.pdf"
+        if os.path.exists(deva_pdf_path):
+            with open(deva_pdf_path, "rb") as f:
+                st.download_button(
+                    label="🚀 Download Devashmitha's Guide (PDF)",
+                    data=f.read(),
+                    file_name="MemoryMirror_AI_Devashmitha_Reddy_Member_Guide.pdf",
+                    mime="application/pdf",
+                    use_container_width=True,
+                )
+
+    st.markdown("---")
     st.markdown("#### 📦 Export Experiment Artifacts")
     col_exp1, col_exp2 = st.columns(2)
     with col_exp1:
