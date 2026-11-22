@@ -178,6 +178,36 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# -----------------------------------------------------------------------------
+# Quick Prominent PDF Downloads (Directly visible at the top)
+# -----------------------------------------------------------------------------
+import os
+col_top_dl1, col_top_dl2 = st.columns(2)
+with col_top_dl1:
+    gauri_pdf = "MemoryMirror_AI_Gauri_Dwivedi_Leader_Guide.pdf"
+    if os.path.exists(gauri_pdf):
+        with open(gauri_pdf, "rb") as f:
+            st.download_button(
+                label="📥 👑 Download Gauri's Guide (PDF)",
+                data=f.read(),
+                file_name="MemoryMirror_AI_Gauri_Dwivedi_Leader_Guide.pdf",
+                mime="application/pdf",
+                use_container_width=True,
+            )
+with col_top_dl2:
+    deva_pdf = "MemoryMirror_AI_Devashmitha_Reddy_Member_Guide.pdf"
+    if os.path.exists(deva_pdf):
+        with open(deva_pdf, "rb") as f:
+            st.download_button(
+                label="📥 🚀 Download Devashmitha's Guide (PDF)",
+                data=f.read(),
+                file_name="MemoryMirror_AI_Devashmitha_Reddy_Member_Guide.pdf",
+                mime="application/pdf",
+                use_container_width=True,
+            )
+
+st.markdown("<br>", unsafe_allow_html=True)
+
 
 # -----------------------------------------------------------------------------
 # Sidebar: Benchmark & Model Controls
